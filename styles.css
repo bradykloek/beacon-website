@@ -1,0 +1,103 @@
+:root{
+    --darkblue: #211554;
+    --white: #FFFFFA;
+    --yellow: #FFFC4A;
+    --mint: #94FFC8;
+    --blue: #8FEDFF;
+    --pink: #FF94ED;
+    --purple: #B880ED;
+}
+
+body {
+  background-color: var(--darkblue);
+}
+
+h1 {
+    text-align: center;
+    color: var(--white);
+    font-family: Lexend, Arial;
+    font-weight: 800;
+    font-size: clamp(2em, 6em, 6em);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+    color: var(--white);
+    font-family: "DM Sans", Arial;
+    font-weight: 400;
+    font-size: clamp(1.5em, 2em, 2em);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        to right, 
+        var(--yellow),
+        var(--mint),
+        var(--blue),
+        var(--pink),
+        var(--purple)
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.buttonContainer{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;  
+    gap: 16px;    
+
+    font-family: "DM Sans", Arial;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration:none; 
+    
+    color: var(--yellow);
+    background-color: transparent;
+    border: 3px solid var(--yellow);
+    border-radius: 10px;
+    
+    padding: .3em 0.5em;
+    margin: 5px;
+        
+    background-size: 200% 100%; 
+    background-image: linear-gradient(to right, transparent 50%, var(--yellow) 50%);
+    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, 
+                color .3s ease 0s, 
+                background-color .5s ease,
+                font-weight .5s ease;
+}
+
+.button:hover{
+    color: var(--darkblue);
+    background-color: var(--yellow);
+    font-weight: 800;
+    background-position: -100% 100%;
+}
+
+.icon {
+    width: 1.1em;
+    height: 1.1em;
+    fill: currentColor;
+    position: relative;
+    top: 4px;
+}
+
+
+.button-collection {
+    margin-top: 100px;
+    text-align: center;    /* This centers the inline-block containers */
+    width: 100%;
+}
