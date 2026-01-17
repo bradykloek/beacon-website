@@ -95,9 +95,21 @@ p {
     top: 4px;
 }
 
-
 .button-collection {
     margin-top: 100px;
     text-align: center;    /* This centers the inline-block containers */
     width: 100%;
+}
+
+.calendar-card {
+    padding: 12px;
+    border-radius: 20px;
+    border: 3px solid var(--yellow); 
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.calendar-card iframe {
+    border-radius: 12px;
 }
