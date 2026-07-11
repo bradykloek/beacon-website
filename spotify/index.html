@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    
+    <script type="text/javascript">
+        var redirectUrl = "";
+
+        window.location.href = redirectUrl;
+
+        window.onload = function() {
+            document.getElementById("fallback-link").href = redirectUrl;
+        };
+    </script>
+  </head>
+  <body>
+    <!-- The 'id' lets the JavaScript find this specific link and swap the URL -->
+    <p>If you are not redirected, <a id="fallback-link" href="#">click here</a>.</p>
+  </body>
+</html>
